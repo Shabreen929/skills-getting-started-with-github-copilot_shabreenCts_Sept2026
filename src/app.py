@@ -122,3 +122,9 @@ def remove_from_activity(activity_name: str, email: str):
         return {"message": f"Removed {email} from {activity_name}"}
     else:
         raise HTTPException(status_code=400, detail="Student is not registered for this activity")
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("src.app:app", host="0.0.0.0", port=8000, reload=True)

@@ -18,7 +18,7 @@ A super simple FastAPI application that allows students to view and sign up for 
 2. Run the application:
 
    ```
-   python app.py
+   python -m src.app
    ```
 
 3. Open your browser and go to:
